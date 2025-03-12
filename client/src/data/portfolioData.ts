@@ -166,46 +166,89 @@ export const leadership = [
     role: "Vice President",
     organization: "IUT Computer Society",
     period: "June 2024 - Present",
-    description: "Leading operations and managing a team of 30 members."
+    description: "Executing administrative tasks, managing events, and leading a volunteer team of 30 members to ensure smooth operations.",
   },
   {
-    role: "Senior Member (Software & Automation)",
+    role: "Senior Member (Software and Automation Sub Team)",
     organization: "Project Altair",
-    period: "August 2023 – Present",
-    description: "Working on Machine Learning applications for Mars Rover Competitions."
+    period: "August 2023 - December 2024",
+    description: "Contributing Machine Learning applications to the Software and Science Exploration Sub-Team for Mars Rover Competitions.",
   },
   {
-    role: "Assistant Head of PR",
+    role: "Assistant Head of PR and Outreach",
     organization: "IUT Robotics Society",
-    period: "October 2023 – Present",
-    description: "Leading PR collaborations with major organizations."
+    period: "October 2023 - November 2024",
+    description: "Planning PR activities and leading a 12-member team to collaborate with renowned organizations.",
   },
   {
-    role: "International Ambassador",
+    role: "International Ambassador of Bangladesh",
     organization: "JoinThe.Space",
-    period: "September 2023 – Present",
-    description: "Assisting the Asia & Oceania Team in space industry projects."
-  }
+    period: "September 2023 - Present",
+    description: "Serving in the Asia and Oceania Team to facilitate Central Team activities in the space industry.",
+  },
+  {
+    role: "Campus Coordinator",
+    organization: "Orange Corners Bangladesh",
+    period: "March 2023 - February 2024",
+    description:
+      "Facilitating campus activities to promote the entrepreneurship ecosystem for an initiative by the Kingdom of Netherlands.",
+  },
+  {
+    role: "Instructor and Academic Content Developer",
+    organization: "EduHive",
+    period: "February 2022 - December 2022",
+    description: "Teaching 500+ students via live and recorded classes, providing feedback, and developing academic content.",
+  },
 ];
 
-// Achievements data
 export const achievements = [
   {
-    title: "Finalist - Blockchain Olympiad Bangladesh 2023",
-    description: "Developed DefTax, a blockchain-based decentralized tax collection system to prevent tax evasion."
+    role: "Finalist",
+    organization: "Blockchain Olympiad Bangladesh",
+    period: "2023",
+    tasks: [
+      "Worked on the tax evasion problem in Bangladesh due to a weak centralized tax system.",
+      "Proposed DefTax, a blockchain-based solution to decentralize tax collection and prevent evasion.",
+    ],
   },
   {
-    title: "5th Place - Capture the Flag (CodeRush 1.0)",
-    description: "Led a team solving forensics, steganography, network security, cryptography, and OSINT challenges."
+    role: "5th Place",
+    organization: "Capture the Flag Competition (CodeRush 1.0)",
+    period: "2023", // Assumed 2023; adjust if incorrect
+    tasks: [
+      "Solved challenges in computer forensics, steganography, network packet analysis, cryptography, and OSINT.",
+      "Served as the team leader.",
+    ],
   },
   {
-    title: "Champion - Hult Prize at IUT",
-    description: "Developed Impacto, a solution addressing fashion industry waste through a recycling-integrated supply chain."
+    role: "Champion",
+    organization: "Hult Prize at Islamic University of Technology",
+    period: "2023", // Assumed 2023; adjust if incorrect
+    tasks: [
+      "Addressed waste issues in the global fashion industry and environmental degradation.",
+      "Proposed Impacto, a startup integrating supply chain and recycling solutions.",
+      "Contributed to the technical architecture and system design.",
+    ],
   },
   {
-    title: "Regional Finalist - Hult Prize Mumbai Summit 2023",
-    description: "Enhanced Impacto with AR and AI for an improved customer experience."
-  }
+    role: "Regional Finalist",
+    organization: "Hult Prize Mumbai Summit",
+    period: "2023",
+    tasks: [
+      "Presented Impacto to solve fashion industry waste in Bangladesh.",
+      "Developed a mobile app with AR and AI to enhance recycling and customer experience.",
+    ],
+  },
+  {
+    role: "60% Scholarship Winner",
+    organization: "ISCEA PTAK Global Supply Chain Case Competition",
+    period: "2023",
+    tasks: [
+      "Tackled energy consumption and power disruption in Bangladesh’s RMG sector.",
+      "Proposed a Joint Energy Manufacturing Facility, Logistics Optimization System, and Renewable Energy Microgrid System.",
+      "Worked on the technical architecture of the solution.",
+    ],
+  },
 ];
 
 // Open Source Contributions data

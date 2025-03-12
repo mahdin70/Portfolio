@@ -1,20 +1,48 @@
 import { motion } from "framer-motion";
-import { Trophy, Medal, Star } from "lucide-react";
+import { Briefcase, Building2, Calendar, CheckCircle2, Medal } from "lucide-react"; // Removed Trophy, Star; Added required icons
 import { achievements } from "../data/portfolioData";
 
-const AchievementCard = ({ title, description }: { title: string; description: string }) => (
-  <motion.div 
-    className="coder-card group p-5"
-    whileHover={{ y: -5 }}
-    transition={{ duration: 0.3 }}
-  >
-    <div className="flex items-center gap-3 mb-3">
-      <div className="bg-secondary/10 p-2 rounded-md">
-        <Trophy className="h-4 w-4 text-secondary" />
+const AchievementCard = ({
+  role,
+  organization,
+  period,
+  tasks,
+}: {
+  role: string;
+  organization: string;
+  period: string;
+  tasks: string[];
+}) => (
+  <motion.div className="coder-card group p-5" whileHover={{ y: -5 }} transition={{ duration: 0.3 }}>
+    <div className="flex flex-col gap-2">
+      {/* Position Name */}
+      <h3 className="font-bold text-foreground flex items-center gap-2">
+        <Briefcase className="h-4 w-4 text-secondary hidden sm:inline" />
+        <span>{role}</span>
+      </h3>
+
+      {/* Organization Name */}
+      <div className="flex items-center gap-1.5 text-md text-foreground/80 font-mono font-extrabold">
+        <Building2 className="h-4 w-4 text-secondary/70" />
+        <span>{organization}</span>
       </div>
-      <h3 className="font-bold text-foreground font-mono">{title}</h3>
+
+      {/* Period */}
+      <p className="font-mono text-xs sm:text-sm text-primary font-extrabold bg-secondary/20 px-2 py-1 rounded-md inline-flex items-center w-fit">
+        <Calendar className="h-3 w-3 mr-1.5" />
+        {period}
+      </p>
+
+      {/* Tasks */}
+      <div className="space-y-2 text-sm mt-2">
+        {tasks.map((task, index) => (
+          <div key={index} className="flex gap-2 group/task">
+            <CheckCircle2 className="h-4 w-4 text-secondary/70 mt-0.5 flex-shrink-0 group-hover/task:text-secondary transition-colors duration-200" />
+            <p className="text-foreground/70 group-hover/task:text-foreground/90 transition-colors duration-200">{task}</p>
+          </div>
+        ))}
+      </div>
     </div>
-    <p className="text-foreground/70 text-sm leading-relaxed font-mono">{description}</p>
   </motion.div>
 );
 
@@ -46,17 +74,15 @@ const Achievements = () => {
         <div className="bg-secondary/10 p-2 rounded-md">
           <Medal className="h-5 w-5 text-secondary" />
         </div>
-        <h2 className="text-2xl md:text-3xl font-bold gradient-text">
-          Achievements
-        </h2>
+        <h2 className="text-2xl md:text-3xl font-bold gradient-text">Achievements</h2>
       </div>
-      
-      <div className="font-mono text-sm text-foreground/70 mb-8">
+
+      <div className="font-mono text-sm text-foreground mb-8">
         <span className="text-secondary">const</span> <span className="text-primary">achievements</span> = {"{"}
         <span className="text-foreground/90"> competitions, awards, recognition </span>
         {"}"};
       </div>
-      
+
       <motion.div
         className="space-y-6"
         variants={containerVariants}
@@ -67,8 +93,10 @@ const Achievements = () => {
         {achievements.map((achievement, index) => (
           <motion.div key={index} variants={itemVariants}>
             <AchievementCard
-              title={achievement.title}
-              description={achievement.description}
+              role={achievement.role}
+              organization={achievement.organization}
+              period={achievement.period}
+              tasks={achievement.tasks}
             />
           </motion.div>
         ))}

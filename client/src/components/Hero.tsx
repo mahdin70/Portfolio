@@ -151,7 +151,7 @@ const Hero = () => {
               // about.me
             </div>
             <p className="font-mono  text-sm md:text-base text-foreground/90 leading-relaxed">
-              I sling code like a digital ninja—clean, sharp, and right on target. Obsessed with Generative AI, I’m the guy who thinks
+              I sling code like a digital ninja — clean, sharp, and right on target. Obsessed with Generative AI, I’m the guy who thinks
               machines should flex their creative muscles while I sip my coffee. Software Product Management? Oh, I just casually turn chaos
               into slick, market-ready solutions. I learn at warp speed, keep my ducks in a row (mostly), and live for the thrill of joining
               innovative crews that don’t mess around. Ready to build the next big thing — hit me up!

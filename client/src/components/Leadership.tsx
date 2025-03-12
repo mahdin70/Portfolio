@@ -2,39 +2,40 @@ import { motion } from "framer-motion";
 import { Users, Calendar, Award } from "lucide-react";
 import { leadership } from "../data/portfolioData";
 
-const LeadershipCard = ({ 
-  role, 
-  organization, 
-  period, 
-  description 
-}: { 
-  role: string; 
-  organization: string; 
-  period: string; 
-  description: string 
+const LeadershipCard = ({
+  role,
+  organization,
+  period,
+  description,
+}: {
+  role: string;
+  organization: string;
+  period: string;
+  description: string;
 }) => (
-  <motion.div 
-    className="coder-card group p-5"
-    whileHover={{ y: -5 }}
-    transition={{ duration: 0.3 }}
-  >
-    <div className="flex flex-col md:flex-row md:items-center md:justify-between mb-2 gap-2">
+  <motion.div className="coder-card group p-5" whileHover={{ y: -5 }} transition={{ duration: 0.3 }}>
+    <div className="flex flex-col gap-2">
+      {/* Position Title */}
       <h3 className="font-bold text-foreground flex items-center gap-2">
         <Award className="h-4 w-4 text-secondary hidden sm:inline" />
         <span>{role}</span>
       </h3>
-      <p className="font-mono text-xs sm:text-sm text-secondary/90 bg-secondary/10 px-2 py-1 rounded-md inline-flex items-center w-fit">
+
+      {/* Organization Name */}
+      <div className="flex items-center gap-1.5 text-sm text-foreground/70 font-extrabold font-mono">
+        <Users className="h-4 w-4 text-secondary" />
+        <span>{organization}</span>
+      </div>
+
+      {/* Period */}
+      <p className="font-mono font-extrabold text-xs sm:text-sm text-primary bg-secondary/20 px-2 py-1 rounded-md inline-flex items-center w-fit">
         <Calendar className="h-3 w-3 mr-1.5" />
         {period}
       </p>
+
+      {/* Description */}
+      <p className="text-foreground/70 text-sm leading-relaxed font-mono mt-1">{description}</p>
     </div>
-    
-    <div className="flex items-center gap-1.5 text-sm text-foreground/80 font-mono mb-3">
-      <Users className="h-4 w-4 text-secondary/70" />
-      <span>{organization}</span>
-    </div>
-    
-    <p className="text-foreground/70 text-sm leading-relaxed font-mono">{description}</p>
   </motion.div>
 );
 

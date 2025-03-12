@@ -43,7 +43,7 @@ const TimelineItem = ({
         </div>
 
         {/* Period */}
-        <p className="font-mono text-xs sm:text-sm text-primary font-extrabold bg-secondary/40 px-2 py-1 rounded-md inline-flex items-center w-fit">
+        <p className="font-mono text-xs sm:text-sm text-primary font-extrabold bg-secondary/20 px-2 py-1 rounded-md inline-flex items-center w-fit">
           <Calendar className="h-3 w-3 mr-1.5" />
           {period}
         </p>

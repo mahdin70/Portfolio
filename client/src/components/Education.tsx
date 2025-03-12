@@ -34,7 +34,7 @@ const TimelineItem = ({
           <GraduationCap className="h-4 w-4 text-secondary hidden sm:inline" />
           <span>{institute}</span>
         </h3>
-        <p className="font-mono text-xs sm:text-sm text-primary font-extrabold bg-secondary/40 px-2 py-1 rounded-md inline-flex items-center w-fit">
+        <p className="font-mono text-xs sm:text-sm text-primary font-extrabold bg-secondary/20 px-2 py-1 rounded-md inline-flex items-center w-fit">
           <Calendar className="h-3 w-3 mr-1.5" />
           {period}
         </p>
