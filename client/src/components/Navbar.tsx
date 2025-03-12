@@ -70,11 +70,13 @@ const Navbar = () => {
   ];
 
   return (
-    <nav className={`fixed w-full z-50 transition-all duration-300 ${
-      isScrolled 
-        ? "bg-card/90 backdrop-blur-sm border-b border-secondary/10 shadow-lg shadow-secondary/5" 
-        : "bg-background/50 backdrop-blur-sm"
-    }`}>
+    <nav
+      className={`fixed w-full z-50 transition-all duration-300 ${
+        isScrolled
+          ? "bg-card/90 backdrop-blur-sm border-b border-secondary/10 shadow-lg shadow-secondary/5"
+          : "bg-background/50 backdrop-blur-sm"
+      }`}
+    >
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="flex justify-between items-center py-3">
           <Link href="/">
@@ -84,23 +86,29 @@ const Navbar = () => {
               </div>
             </div>
           </Link>
-          
+
           <div className="hidden md:flex items-center space-x-8">
             {navLinks.map((link) => (
               <NavLink key={link.href} href={link.href} label={link.label} icon={link.icon} />
             ))}
           </div>
-          
+
           <div className="hidden md:flex items-center space-x-4">
             {socialLinks.map((link) => (
-              <Button key={link.href} variant="ghost" size="icon" asChild className="hover:bg-secondary/10">
+              <Button
+                key={link.href}
+                variant="ghost"
+                size="icon"
+                asChild
+                className="rounded-full hover:text-primary hover:bg-card transition-all duration-300 hover:shadow-[0_0_15px_rgba(0,102,255,0.3)]"
+              >
                 <a href={link.href} target="_blank" rel="noopener noreferrer" aria-label={link.label}>
                   <link.icon className="h-5 w-5" />
                 </a>
               </Button>
             ))}
           </div>
-          
+
           <Sheet>
             <SheetTrigger asChild className="md:hidden">
               <Button variant="outline" size="icon" className="border-secondary/20">

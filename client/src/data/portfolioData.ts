@@ -3,45 +3,47 @@ export const projects = [
   {
     title: "CampusWorks",
     technologies: "NodeJS, Express, React, Tailwind, MongoDB",
-    description: "A platform for IUT students, alumni, and faculty to share freelance work and internships.",
-    link: "#",
-    github: "https://github.com/mahdinm/campus-works"
+    description: "A platform for IUT students, alumni, and faculty to share freelance work, resources and internships.",
+    link: "https://github.com/mahdin70/CampusWorks",
+    github: "https://github.com/mahdin70/CampusWorks",
   },
   {
     title: "EcoConnect",
     technologies: "NodeJS, Express, React, Tailwind, MongoDB",
     description: "A social network for eco-conscious individuals to create and join sustainability initiatives.",
-    link: "#",
-    github: "https://github.com/mahdinm/eco-connect"
+    link: "https://github.com/mahdin70/EcoConnect",
+    github: "https://github.com/mahdin70/EcoConnect",
   },
   {
     title: "VoyageVerse",
     technologies: "NodeJS, Express, React, Tailwind, MongoDB",
-    description: "Travel blogging platform with image/video uploads and commenting.",
-    link: "#",
-    github: "https://github.com/mahdinm/voyage-verse"
+    description: "Travel blogging platform with image/video uploads and threaded commenting.",
+    link: "https://github.com/mahdin70/VoyageVerse",
+    github: "https://github.com/mahdin70/VoyageVerse",
   },
   {
-    title: "Med.io",
-    technologies: "PHP, HTML, CSS, MySQL",
-    description: "Healthcare management system for doctors, patients, and admins.",
-    link: "#",
-    github: "https://github.com/mahdinm/med-io"
+    title: "Audio Transcript Translator",
+    technologies: "Streamlit, OpenAI API, LangChain.js",
+    description: "Transcribes audio files to text and translates them to multiple languages using OpenAI's GPT-4o-mini and whisper.",
+    link: "https://dino-audio.streamlit.app/",
+    github: "https://github.com/mahdin70/Audio-Transcript-Translator",
   },
   {
-    title: "Mars Rock Classification App",
+    title: "Mars Rock Classifier",
     technologies: "Python, Streamlit, SVM, OpenCV",
-    description: "Used in European Rover Challenge 2023 to classify Martian terrain.",
-    link: "#",
-    github: "https://github.com/mahdinm/mars-rock-classifier"
+    description:
+      "Classifies rock images from Martian terrain into categories such as Basalt, Coal, Granite, Limestone, Marble, Quartzite, and Sandstone",
+    link: "https://github.com/mahdin70/Mars-Rock-Classification-using-SVM",
+    github: "https://github.com/mahdin70/Mars-Rock-Classification-using-SVM",
   },
   {
     title: "Movie Recommendation App",
     technologies: "Python, Streamlit, Scikit-Learn, NLTK",
-    description: "Recommends similar movies using TMDB dataset.",
-    link: "#",
-    github: "https://github.com/mahdinm/movie-recommender"
-  }
+    description:
+      "This app recommends multiple movies that have similarities in themes and stories with the user-preferred movie. It is built using the TMDB dataset from Kaggle and features a web interface created with Streamlit.",
+    link: "https://github.com/mahdin70/Movie-Recommendation-App-Based-On-TMDB-Data",
+    github: "https://github.com/mahdin70/Movie-Recommendation-App-Based-On-TMDB-Data",
+  },
 ];
 
 // Skills data

@@ -18,7 +18,9 @@ import {
   MonitorSmartphone,
   BrainCircuit,
   CloudLightning,
+  Mail
 } from "lucide-react";
+import {HuggingFace} from '@lobehub/icons';
 
 const Hero = () => {
   const containerVariants = {
@@ -115,7 +117,7 @@ const Hero = () => {
         animate="visible"
       >
         <motion.div className="lg:col-span-7" variants={itemVariants}>
-          <div className="inline-flex items-center bg-primary/10 text-primary rounded-full px-3 py-1 text-sm font-mono mb-6 border border-primary/20 glow-pulse">
+          <div className="inline-flex items-center bg-primary/10 text-white rounded-full px-3 py-1 text-sm font-mono mb-6 border border-primary/20 glow-pulse">
             <Terminal className="w-4 h-4 mr-2" />
             <span>Software Engineer & Generative AI Developer</span>
           </div>
@@ -132,9 +134,7 @@ const Hero = () => {
           </h1>
 
           <motion.div className="overflow-hidden mb-6" variants={typingVariants}>
-            <div className="terminal-text text-lg md:text-lg text-foreground/80">
-              Crafting sleek digital solutions with code and flair
-            </div>
+            <div className="terminal-text text-lg md:text-lg text-foreground/80">Crafting sleek digital solutions with code and flair</div>
           </motion.div>
 
           <motion.div
@@ -173,7 +173,7 @@ const Hero = () => {
 
           <div className="flex flex-wrap gap-4">
             <Button
-              className="group relative overflow-hidden"
+              className="group relative overflow-hidden bg-gradient-to-br from-primary/5 to-secondary/5"
               onClick={() => {
                 const contactSection = document.querySelector("#contact");
                 if (contactSection) {
@@ -185,7 +185,7 @@ const Hero = () => {
               }}
             >
               <motion.span
-                className="absolute inset-0 bg-gradient-to-r from-primary/40 to-secondary/40"
+                className="absolute inset-0 bg-gradient-to-br from-primary/5 to-secondary/5"
                 initial={{ x: "-100%" }}
                 whileHover={{ x: "0%" }}
                 transition={{ duration: 0.4 }}
@@ -368,6 +368,17 @@ const Hero = () => {
         </motion.a>
 
         <motion.a
+          href="https://huggingface.co/mahdin70"
+          target="_blank"
+          rel="noopener noreferrer"
+          className="bg-background/50 rounded-full p-2 text-foreground hover:text-primary hover:bg-card transition-all duration-300 hover:-translate-y-1 hover:shadow-[0_0_15px_rgba(0,102,255,0.3)]"
+          variants={itemVariants}
+          title="Hugging Face"
+        >
+          <HuggingFace className="w-5 h-5" />
+        </motion.a>
+
+        <motion.a
           href="mailto:mahdin.mukit248@gmail.com"
           className="bg-background/50 rounded-full p-2 text-foreground hover:text-primary hover:bg-card transition-all duration-300 hover:-translate-y-1 hover:shadow-[0_0_15px_rgba(0,102,255,0.3)]"
           variants={itemVariants}
@@ -377,7 +388,7 @@ const Hero = () => {
             window.location.href = "mailto:mahdin.mukit248@gmail.com";
           }}
         >
-          <Terminal className="w-5 h-5" />
+          <Mail className="w-5 h-5" />
         </motion.a>
       </motion.div>
     </section>

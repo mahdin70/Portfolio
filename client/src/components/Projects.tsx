@@ -73,12 +73,12 @@ const Projects = () => {
                 <div className="absolute inset-0 bg-gradient-to-br from-primary/5 to-secondary/5 opacity-50"></div>
               </div>
 
-              <div className="p-6">
+              <div className="p-6 flex flex-col h-[calc(100%-11rem)]">
                 <h3 className="text-xl font-bold text-foreground mb-2 font-mono">{project.title}</h3>
 
                 <div className="flex flex-wrap gap-2 mb-4">
                   {project.technologies.split(", ").map((tech, idx) => (
-                    <span key={idx} className="text-xs bg-secondary/10 text-secondary/90 px-2 py-1 rounded-md font-mono">
+                    <span key={idx} className="text-xs bg-secondary/20 text-white px-2 py-1 rounded-md font-mono">
                       {tech}
                     </span>
                   ))}
@@ -86,11 +86,11 @@ const Projects = () => {
 
                 <p className="text-foreground/80 mb-6 text-sm leading-relaxed font-mono">{project.description}</p>
 
-                <div className="flex justify-between items-center">
+                <div className="flex justify-between items-center mt-auto">
                   <Button
                     variant="ghost"
                     size="sm"
-                    className="text-secondary hover:text-secondary/90 hover:bg-secondary/10 group flex items-center gap-1"
+                    className="text-white bg-secondary/20 hover:text-secondary/90 hover:bg-secondary/10 group flex items-center gap-1"
                     asChild
                   >
                     <a href={project.link} target="_blank" rel="noopener noreferrer">
