@@ -254,21 +254,21 @@ export const achievements = [
 // Open Source Contributions data
 export const openSourceProjects = [
   {
-    title: "Text Summarizer Model",
-    description: "A fine-tuned model for generating concise summaries from long articles and documents.",
-    downloads: "1.2K",
-    link: "https://huggingface.co/"
+    title: "Unixcoder in Code Vulnerability Detection",
+    description: "Fine-tuned microsoft/unixcoder-base model for detecting vulnerabilities in code.",
+    downloads: "41",
+    link: "https://huggingface.co/mahdin70/unixcoder-code-vulnerability-detector",
   },
   {
-    title: "Bengali NLP Model",
-    description: "Fine-tuned language model for Bangla text generation and classification tasks.",
-    downloads: "850",
-    link: "https://huggingface.co/"
+    title: "GraphCodeBERT in Code Vulnerability Detection",
+    description: "Fine-tuned microsoft/graphcodebert-base model for detecting vulnerabilities in code.",
+    downloads: "17",
+    link: "https://huggingface.co/mahdin70/graphcodebert-devign-code-vulnerability-detector",
   },
   {
-    title: "Code Assistant",
-    description: "Fine-tuned model for providing coding help and generating boilerplate code.",
-    downloads: "2.3K",
-    link: "https://huggingface.co/"
-  }
+    title: "PrimeVul-BigVul Merged and Cleaned Dataset",
+    description: "Merged and cleaned PrimeVul and BigVul datasets for code vulnerability detection.",
+    downloads: "18",
+    link: "https://huggingface.co/datasets/mahdin70/merged_bigvul_primevul",
+  },
 ];

@@ -1,5 +1,5 @@
 import { motion } from "framer-motion";
-import { Brain, Languages, Bot, GitFork, Download, ExternalLink } from "lucide-react";
+import { Brain, Languages, Bot, GitFork, Download, ExternalLink, Database } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import { openSourceProjects } from "../data/portfolioData";
 
@@ -29,18 +29,18 @@ const OpenSourceCard = ({
     </div>
     <p className="text-foreground/80 mb-5 text-sm font-mono">{description}</p>
     <div className="flex justify-between items-center">
-      <div className="flex items-center text-xs text-muted-foreground font-mono">
+      <div className="flex items-center text-md font-extrabold text-muted-foreground font-mono">
         <Download className="h-3.5 w-3.5 mr-1.5" />
         <span>{downloads}</span>
       </div>
       <Button
         variant="ghost"
         size="sm"
-        className="text-secondary hover:text-secondary/90 hover:bg-secondary/10 group flex items-center gap-1"
+        className="bg-secondary/20 text-primary hover:text-secondary/90 hover:bg-secondary/10 group flex items-center gap-1"
         asChild
       >
         <a href={link} target="_blank" rel="noopener noreferrer">
-          <span className="font-mono text-xs">View on Hugging Face</span>
+          <span className="font-mono text-md font-extrabold">View on Hugging Face</span>
           <ExternalLink className="h-3.5 w-3.5 transition-transform group-hover:translate-x-0.5 group-hover:-translate-y-0.5" />
         </a>
       </Button>
@@ -49,7 +49,7 @@ const OpenSourceCard = ({
 );
 
 const getIconForProject = (title: string) => {
-  if (title.includes("Text")) return Brain;
+  if (title.includes("Dataset")) return Database;
   if (title.includes("Bangla") || title.includes("Bengali")) return Languages;
   if (title.includes("Code")) return Bot;
   return Brain;

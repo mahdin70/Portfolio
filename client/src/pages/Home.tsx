@@ -19,7 +19,7 @@ const Home = () => {
         <Projects />
         <Skills />
         
-        <section id="experience" className="py-10 md:py-16 relative overflow-hidden">
+        <section id="experience" className="py-1 md:py-16 relative overflow-hidden">
           {/* Background elements */}
           <div className="absolute inset-0 matrix-bg opacity-30 z-0"></div>
           <div className="absolute -bottom-40 -right-40 w-80 h-80 bg-secondary/20 blur-[100px] rounded-full z-0"></div>
@@ -33,7 +33,7 @@ const Home = () => {
           </div>
         </section>
         
-        <section className="py-6 md:py-12 relative overflow-hidden">
+        <section className="py-6 md:py-1 relative overflow-hidden">
           {/* Background elements */}
           <div className="absolute inset-0 matrix-bg opacity-30 z-0"></div>
           <div className="absolute -bottom-40 -right-40 w-80 h-80 bg-primary/20 blur-[100px] rounded-full z-0"></div>
