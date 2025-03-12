@@ -93,7 +93,7 @@ export const workExperience = [
   {
     role: "Research Assistant",
     company: "Independent University, Bangladesh",
-    period: "November 2024 - Present",
+    period: "November 2024 - February 2025",
     tasks: [
       "Conducting Human-Computer Interaction (HCI) research focusing on AI usability and ethical considerations.",
       "Performing user interaction surveys for AI-driven technologies."
