@@ -143,8 +143,8 @@ export const workExperience = [
     company: "Independent University, Bangladesh",
     period: "November 2024 - February 2025",
     tasks: [
-      "Conducting Human-Computer Interaction (HCI) research focusing on AI usability and ethical considerations.",
-      "Performing user interaction surveys for AI-driven technologies."
+      "Conducted Human-Computer Interaction (HCI) research focusing on AI usability and ethical considerations.",
+      "Performed user interaction surveys for AI-driven technologies."
     ]
   },
   {
@@ -152,9 +152,10 @@ export const workExperience = [
     company: "KAZ Software",
     period: "June 2024 – September 2024",
     tasks: [
-      "Frontend development for P1ston (React + Bootstrap) ERP add-on.",
-      "R&D for Magazine.ai, working with LLMs, text extraction, prompt engineering, and image generation.",
-      "Used OpenAI API and LangChain.js for content and image generation."
+      "Did Frontend development for P1ston - An USA based Supply Chain and Order Tracking Startup.",
+      "Performed Manual Testing for the P1ston's Quote Module",
+      "Performed R&D for Magazine.ai, working with LLMs, text extraction, prompt engineering, and chained image generation.",
+      "Developed PoC using OpenAI API and LangChain.js for magazine content and image generation."
     ]
   }
 ];
