@@ -3,7 +3,10 @@ import { createServer, type Server } from "http";
 import nodemailer from "nodemailer";
 import { z } from "zod";
 
-// Contact form validation schema
+import dotenv from "dotenv";
+dotenv.config();
+
+
 const contactSchema = z.object({
   name: z.string().min(2),
   email: z.string().email(),
@@ -15,8 +18,8 @@ const transporter = nodemailer.createTransport({
   host: "smtp.gmail.com",
   port: 587,
   auth: {
-    user: "mahdin.mukit248@gmail.com",
-    pass: "gcbvavmzzxkwwuph",
+    user: process.env.EMAIL_USER,
+    pass: process.env.EMAIL_PASS,
   },
 });
 
