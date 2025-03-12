@@ -11,25 +11,14 @@ const contactSchema = z.object({
   message: z.string().min(10),
 });
 
-// Create a test account for development (will log credentials to console)
-// In production, you would use real email credentials
-const createTestAccount = async () => {
-  try {
-    const testAccount = await nodemailer.createTestAccount();
-    return nodemailer.createTransport({
-      host: "smtp.ethereal.email",
-      port: 587,
-      secure: false,
-      auth: {
-        user: testAccount.user,
-        pass: testAccount.pass,
-      },
-    });
-  } catch (error) {
-    console.error("Failed to create test email account:", error);
-    return null;
-  }
-};
+const transporter = nodemailer.createTransport({
+  host: "smtp.gmail.com",
+  port: 587,
+  auth: {
+    user: "mahdin.mukit248@gmail.com",
+    pass: "gcbvavmzzxkwwuph",
+  },
+});
 
 export async function registerRoutes(app: Express): Promise<Server> {
   // Contact form endpoint
@@ -37,14 +26,6 @@ export async function registerRoutes(app: Express): Promise<Server> {
     try {
       const validatedData = contactSchema.parse(req.body);
 
-      // Setup test transporter for development
-      const transporter = await createTestAccount();
-
-      if (!transporter) {
-        return res.status(500).json({ message: "Failed to set up email transport" });
-      }
-
-      // Send mail with defined transport object
       const info = await transporter.sendMail({
         from: `"Portfolio Contact" <${validatedData.email}>`,
         to: "mahdin.mukit248@gmail.com",
@@ -58,8 +39,7 @@ export async function registerRoutes(app: Express): Promise<Server> {
         `,
       });
 
-      console.log("Message sent: %s", info.messageId);
-      console.log("Preview URL: %s", nodemailer.getTestMessageUrl(info));
+      console.log("Email Sent Successfully: %s", info.messageId);
 
       return res.status(200).json({ message: "Message sent successfully" });
     } catch (error) {
@@ -67,7 +47,7 @@ export async function registerRoutes(app: Express): Promise<Server> {
         return res.status(400).json({ message: "Validation error", errors: error.errors });
       }
 
-      console.error("Contact form error:", error);
+      console.error("Email Not Sent!", error);
       return res.status(500).json({ message: "Failed to send message" });
     }
   });
