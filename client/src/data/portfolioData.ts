@@ -47,25 +47,71 @@ export const projects = [
 ];
 
 // Skills data
+// Programming Languages
 export const programmingSkills = [
   { name: "JavaScript/TypeScript", percentage: 90 },
   { name: "Python", percentage: 85 },
   { name: "Java", percentage: 80 },
-  { name: "C/C++", percentage: 75 }
+  { name: "C/C++", percentage: 75 },
 ];
 
+// Frameworks
 export const frameworkSkills = [
   { name: "React", percentage: 90 },
   { name: "NodeJS/Express", percentage: 85 },
   { name: "Tailwind CSS", percentage: 95 },
-  { name: "LangChain", percentage: 70 }
+  { name: "LangChain", percentage: 70 },
 ];
 
-export const toolsSkills = [
+// Libraries
+export const librarySkills = [
+  { name: "NumPy", percentage: 85 },
+  { name: "Pandas", percentage: 85 },
+  { name: "Matplotlib", percentage: 80 },
+  { name: "Scikit-Learn", percentage: 75 },
+];
+
+// Databases
+export const databaseSkills = [
   { name: "MongoDB", percentage: 85 },
   { name: "MySQL", percentage: 80 },
-  { name: "Figma/UI Design", percentage: 75 },
-  { name: "Jira/Project Management", percentage: 85 }
+  { name: "Neo4j", percentage: 70 },
+];
+
+// Generative AI Skills
+export const generativeAISkills = [
+  { name: "RAG Pipeline", percentage: 75 },          // Retrieval-Augmented Generation
+  { name: "Vector Databases", percentage: 70 },      // e.g., Pinecone, Weaviate
+  { name: "Prompt Engineering", percentage: 80 },    // Crafting effective AI prompts
+  { name: "Fine-Tuning Models", percentage: 65 },    // e.g., LLMs like BERT, GPT
+];
+
+// Testing Tools
+export const testingSkills = [
+  { name: "Postman", percentage: 85 },
+  { name: "JUnit", percentage: 75 },
+  { name: "JMeter", percentage: 70 },
+];
+
+// Project Management Tools
+export const projectManagementSkills = [
+  { name: "Jira", percentage: 85 },
+  { name: "Trello", percentage: 80 },
+  { name: "Notion", percentage: 75 },
+];
+
+// Cyber Security Skills
+export const cyberSecuritySkills = [
+  { name: "OSINT", percentage: 70 },                // Open-Source Intelligence
+  { name: "Cryptography", percentage: 65 },
+  { name: "Wireshark", percentage: 70 },
+];
+
+// UI/UX Design Tools
+export const uiUxSkills = [
+  { name: "Figma", percentage: 75 },
+  { name: "LucidChart", percentage: 70 },
+  { name: "Draw.io", percentage: 65 },
 ];
 
 // Education data

@@ -1,6 +1,16 @@
 import { motion } from "framer-motion";
-import { Code, Braces, Terminal, CheckCircle2 } from "lucide-react";
-import { programmingSkills, frameworkSkills, toolsSkills } from "../data/portfolioData";
+import { Code, Braces, Terminal, CheckCircle2, BookOpen, Database, Brain, Bug, KanbanSquare, Shield, PenTool } from "lucide-react";
+import {
+  programmingSkills,
+  frameworkSkills,
+  librarySkills,
+  databaseSkills,
+  generativeAISkills,
+  testingSkills,
+  projectManagementSkills,
+  cyberSecuritySkills,
+  uiUxSkills,
+} from "../data/portfolioData";
 
 const SkillItem = ({ skill }: { skill: string }) => (
   <div className="flex items-center gap-2 group">
@@ -20,14 +30,14 @@ const SkillCategory = ({
   icon: React.ElementType;
   skills: { name: string; percentage: number }[] 
 }) => (
-  <div className="coder-card p-5">
+  <div className="coder-card p-5 h-full flex flex-col"> {/* Added h-full and flex flex-col */}
     <div className="flex items-center gap-2 mb-4">
       <div className="bg-secondary/10 p-1.5 rounded-md">
         <Icon className="h-4 w-4 text-secondary" />
       </div>
       <h3 className="font-bold text-foreground">{title}</h3>
     </div>
-    <div className="grid grid-cols-1 gap-3">
+    <div className="grid grid-cols-1 gap-3 flex-grow"> {/* Added flex-grow */}
       {skills.map((skill, index) => (
         <SkillItem key={index} skill={skill.name} />
       ))}
@@ -63,61 +73,64 @@ const Skills = () => {
       <div className="absolute inset-0 matrix-bg opacity-30 z-0"></div>
       <div className="absolute -bottom-40 -right-40 w-80 h-80 bg-secondary/20 blur-[100px] rounded-full z-0"></div>
       <div className="absolute -top-40 -left-40 w-80 h-80 bg-primary/20 blur-[100px] rounded-full z-0"></div>
-      
+
       <div className="section-container relative z-10">
         <div className="flex items-center gap-2 mb-8">
           <div className="bg-secondary/10 p-2 rounded-md">
             <Braces className="h-5 w-5 text-secondary" />
           </div>
-          <h2 className="text-2xl md:text-3xl font-bold gradient-text">
-            Technical Skills
-          </h2>
+          <h2 className="text-2xl md:text-3xl font-bold gradient-text">Technical Skills</h2>
         </div>
-        
+
         <div className="font-mono text-sm text-foreground/70 mb-8">
           <span className="text-secondary">const</span> <span className="text-primary">skills</span> = {"{"}
           <span className="text-foreground/90"> languages, frameworks, tools </span>
           {"}"};
         </div>
-        
-        <motion.div 
-          className="grid grid-cols-1 md:grid-cols-3 gap-6"
+
+        <motion.div
+          className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 auto-rows-fr"
           variants={containerVariants}
           initial="hidden"
           whileInView="visible"
           viewport={{ once: true, amount: 0.1 }}
         >
           <motion.div variants={itemVariants}>
-            <SkillCategory 
-              title="Programming Languages" 
-              icon={Code}
-              skills={programmingSkills} 
-            />
+            <SkillCategory title="Programming Languages" icon={Code} skills={programmingSkills} />
           </motion.div>
           <motion.div variants={itemVariants}>
-            <SkillCategory 
-              title="Frameworks & Libraries" 
-              icon={Braces}
-              skills={frameworkSkills} 
-            />
+            <SkillCategory title="Frameworks" icon={Braces} skills={frameworkSkills} />
           </motion.div>
           <motion.div variants={itemVariants}>
-            <SkillCategory 
-              title="Tools & Technologies" 
-              icon={Terminal}
-              skills={toolsSkills} 
-            />
+            <SkillCategory title="Libraries" icon={BookOpen} skills={librarySkills} />
+          </motion.div>
+          <motion.div variants={itemVariants}>
+            <SkillCategory title="Databases" icon={Database} skills={databaseSkills} />
+          </motion.div>
+          <motion.div variants={itemVariants}>
+            <SkillCategory title="Generative AI" icon={Brain} skills={generativeAISkills} />
+          </motion.div>
+          <motion.div variants={itemVariants}>
+            <SkillCategory title="Testing Tools" icon={Bug} skills={testingSkills} />
+          </motion.div>
+          <motion.div variants={itemVariants}>
+            <SkillCategory title="Project Management" icon={KanbanSquare} skills={projectManagementSkills} />
+          </motion.div>
+          <motion.div variants={itemVariants}>
+            <SkillCategory title="Cyber Security" icon={Shield} skills={cyberSecuritySkills} />
+          </motion.div>
+          <motion.div variants={itemVariants}>
+            <SkillCategory title="UI/UX and Interaction Design" icon={PenTool} skills={uiUxSkills} />
           </motion.div>
         </motion.div>
-        
+
         <div className="mt-10 coder-card p-4">
           <div className="flex items-start gap-3">
             <Terminal className="h-5 w-5 text-secondary mt-1" />
             <div>
               <div className="font-mono text-sm text-foreground/90 mb-2">// Continuously expanding my skill set</div>
               <p className="text-sm text-foreground/70">
-                I'm passionate about learning new technologies and constantly improving my skills. Currently 
-                exploring machine learning, advanced React patterns, and cloud architecture.
+                I'm passionate about learning new technologies and constantly improving my skills. Currently exploring Generative AI, Agentic AI, System Design and Code Vulnerability Detection.
               </p>
             </div>
           </div>

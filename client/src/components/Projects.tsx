@@ -1,5 +1,5 @@
 import { motion } from "framer-motion";
-import { Code, ExternalLink, Laptop, Leaf, Globe, Heart, Rocket, Film, Github, ArrowUpRight, BookMarked, Terminal } from "lucide-react";
+import { Code, ExternalLink, Laptop, Leaf, Globe, Heart, Rocket, Film, Github, ArrowUpRight, Terminal, Mic } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import { projects } from "../data/portfolioData";
 
@@ -30,7 +30,7 @@ const Projects = () => {
     if (title.includes("Campus")) return <Laptop className="h-10 w-10 text-secondary/70" />;
     if (title.includes("Eco")) return <Leaf className="h-10 w-10 text-secondary/70" />;
     if (title.includes("Voyage")) return <Globe className="h-10 w-10 text-secondary/70" />;
-    if (title.includes("Med")) return <Heart className="h-10 w-10 text-secondary/70" />;
+    if (title.includes("Audio")) return <Mic className="h-10 w-10 text-secondary/70" />;
     if (title.includes("Mars")) return <Rocket className="h-10 w-10 text-secondary/70" />;
     if (title.includes("Movie")) return <Film className="h-10 w-10 text-secondary/70" />;
     return <Code className="h-10 w-10 text-secondary/70" />;
@@ -49,6 +49,12 @@ const Projects = () => {
             <Terminal className="h-5 w-5 text-secondary" />
           </div>
           <h2 className="text-2xl md:text-3xl font-bold gradient-text">Featured Projects</h2>
+        </div>
+
+        <div className="font-mono text-sm text-foreground/70 mb-8">
+          <span className="text-secondary">const</span> <span className="text-primary">projects</span> = {"{"}
+          <span className="text-foreground/90"> title, technologies, description, link </span>
+          {"}"};
         </div>
 
         <motion.div
