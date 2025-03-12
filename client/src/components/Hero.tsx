@@ -18,7 +18,8 @@ import {
   MonitorSmartphone,
   BrainCircuit,
   CloudLightning,
-  Mail
+  Mail,
+  User
 } from "lucide-react";
 import {HuggingFace} from '@lobehub/icons';
 
@@ -294,7 +295,7 @@ const Hero = () => {
               <div className="absolute -top-10 -left-10 w-40 h-40 bg-primary/40 blur-[60px] rounded-full"></div>
 
               <div className="relative z-10 flex items-center justify-center w-full h-full">
-                <img src="../../assets/Self-Image.jpg" alt="Profile Image" className="w-full h-full object-cover" />
+                <span className="text-[10rem] leading-none">👨🏻‍💻</span>
               </div>
             </motion.div>
 
