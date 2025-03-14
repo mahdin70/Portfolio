@@ -80,7 +80,16 @@ const Navbar = () => {
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="flex justify-between items-center py-3">
           <Link href="/">
-            <div className="cursor-pointer">
+            <div
+              className="cursor-pointer"
+              onClick={(e) => {
+                e.preventDefault();
+                window.scrollTo({
+                  top: 0,
+                  behavior: "smooth",
+                });
+              }}
+            >
               <div className="text-xl md:text-2xl font-bold gradient-text tracking-tight">
                 <span className="font-mono">mukit.</span>
               </div>

@@ -80,10 +80,10 @@ export const databaseSkills = [
 
 // Generative AI Skills
 export const generativeAISkills = [
-  { name: "RAG Pipeline", percentage: 75 },          // Retrieval-Augmented Generation
-  { name: "Vector Databases", percentage: 70 },      // e.g., Pinecone, Weaviate
-  { name: "Prompt Engineering", percentage: 80 },    // Crafting effective AI prompts
-  { name: "Fine-Tuning Models", percentage: 65 },    // e.g., LLMs like BERT, GPT
+  { name: "RAG Pipeline", percentage: 75 }, // Retrieval-Augmented Generation
+  { name: "Vector Databases", percentage: 70 }, // e.g., Pinecone, Weaviate
+  { name: "Prompt Engineering", percentage: 80 }, // Crafting effective AI prompts
+  { name: "Fine-Tuning Models", percentage: 65 }, // e.g., LLMs like BERT, GPT
 ];
 
 // Testing Tools
@@ -102,7 +102,7 @@ export const projectManagementSkills = [
 
 // Cyber Security Skills
 export const cyberSecuritySkills = [
-  { name: "OSINT", percentage: 70 },                // Open-Source Intelligence
+  { name: "OSINT", percentage: 70 }, // Open-Source Intelligence
   { name: "Cryptography", percentage: 65 },
   { name: "Wireshark", percentage: 70 },
 ];
@@ -120,20 +120,20 @@ export const education = [
     institute: "Islamic University of Technology (IUT)",
     period: "June 2021 – Present",
     degree: "Bachelor of Science in Software Engineering",
-    grade: "CGPA: 3.65 (Upto 6th Semester)"
+    grade: "Department of Computer Science and Engineering",
   },
   {
     institute: "Adamjee Cantonment College",
     period: "July 2018 – April 2020",
     degree: "Higher Secondary School Certificate",
-    grade: "GPA: 5.00"
+    grade: "GPA: 5.00",
   },
   {
     institute: "Shamsul Haque Khan School and College",
     period: "January 2016 – February 2018",
     degree: "Secondary School Certificate",
-    grade: "GPA: 5.00"
-  }
+    grade: "GPA: 5.00",
+  },
 ];
 
 // Work Experience data
@@ -144,8 +144,8 @@ export const workExperience = [
     period: "November 2024 - February 2025",
     tasks: [
       "Conducted Human-Computer Interaction (HCI) research focusing on AI usability and ethical considerations.",
-      "Performed user interaction surveys for AI-driven technologies."
-    ]
+      "Performed user interaction surveys for AI-driven technologies.",
+    ],
   },
   {
     role: "Intern Software Engineer",
@@ -155,9 +155,9 @@ export const workExperience = [
       "Did Frontend development for P1ston - An USA based Supply Chain and Order Tracking Startup.",
       "Performed Manual Testing for the P1ston's Quote Module",
       "Performed R&D for Magazine.ai, working with LLMs, text extraction, prompt engineering, and chained image generation.",
-      "Developed PoC using OpenAI API and LangChain.js for magazine content and image generation."
-    ]
-  }
+      "Developed PoC using OpenAI API and LangChain.js for magazine content and image generation.",
+    ],
+  },
 ];
 
 // Leadership data
@@ -254,21 +254,39 @@ export const achievements = [
 // Open Source Contributions data
 export const openSourceProjects = [
   {
+    title: "Unixcoder in Code Vulnerability Detection and CWE Classification",
+    description: "Fine-tuned microsoft/unixcoder-base model for detecting vulnerabilities and identify CWE ID in C/C++ code.",
+    downloads: "25",
+    link: "https://huggingface.co/mahdin70/UnixCoder-Primevul-BigVul",
+  },
+  {
     title: "Unixcoder in Code Vulnerability Detection",
-    description: "Fine-tuned microsoft/unixcoder-base model for detecting vulnerabilities in code.",
+    description: "Fine-tuned microsoft/unixcoder-base model for detecting vulnerabilities in C/C++ code.",
     downloads: "41",
     link: "https://huggingface.co/mahdin70/unixcoder-code-vulnerability-detector",
   },
   {
     title: "GraphCodeBERT in Code Vulnerability Detection",
-    description: "Fine-tuned microsoft/graphcodebert-base model for detecting vulnerabilities in code.",
-    downloads: "17",
+    description: "Fine-tuned microsoft/graphcodebert-base model for detecting vulnerabilities in C/C++ code.",
+    downloads: "22",
     link: "https://huggingface.co/mahdin70/graphcodebert-devign-code-vulnerability-detector",
   },
   {
     title: "PrimeVul-BigVul Merged and Cleaned Dataset",
     description: "Merged and cleaned PrimeVul and BigVul datasets for code vulnerability detection.",
-    downloads: "18",
+    downloads: "49",
     link: "https://huggingface.co/datasets/mahdin70/merged_bigvul_primevul",
+  },
+  {
+    title: "Balanced PrimeVul-BigVul Merged Dataset",
+    description: "Merged and cleaned PrimeVul and BigVul datasets for code vulnerability detection.",
+    downloads: "48",
+    link: "https://huggingface.co/datasets/mahdin70/balanced_merged_bigvul_primevul",
+  },
+  {
+    title: "Cleaned BigVul Dataset",
+    description: "Cleaned BigVul dataset for code vulnerability detection and Fix Generation. This Version includs columns like CVE ID, CVE Page, CWE ID, func, fixed_func, vulnerability",
+    downloads: "41",
+    link: "https://huggingface.co/datasets/mahdin70/cleaned_bigvul",
   },
 ];

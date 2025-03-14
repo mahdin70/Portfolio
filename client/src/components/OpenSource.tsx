@@ -3,21 +3,21 @@ import { Brain, Languages, Bot, GitFork, Download, ExternalLink, Database } from
 import { Button } from "@/components/ui/button";
 import { openSourceProjects } from "../data/portfolioData";
 
-const OpenSourceCard = ({ 
-  icon: Icon, 
-  title, 
-  description, 
-  downloads, 
-  link 
-}: { 
-  icon: React.ElementType; 
-  title: string; 
-  description: string; 
-  downloads: string; 
-  link: string; 
+const OpenSourceCard = ({
+  icon: Icon,
+  title,
+  description,
+  downloads,
+  link,
+}: {
+  icon: React.ElementType;
+  title: string;
+  description: string;
+  downloads: string;
+  link: string;
 }) => (
-  <motion.div 
-    className="coder-card group p-5"
+  <motion.div
+    className="coder-card group p-5 flex flex-col h-full" // Change min-h to h-full
     whileHover={{ y: -5 }}
     transition={{ duration: 0.3 }}
   >
@@ -27,7 +27,7 @@ const OpenSourceCard = ({
       </div>
       <h3 className="font-bold text-foreground font-mono">{title}</h3>
     </div>
-    <p className="text-foreground/80 mb-5 text-sm font-mono">{description}</p>
+    <p className="text-foreground/80 mb-5 text-sm font-mono flex-grow">{description}</p> {/* Add flex-grow */}
     <div className="flex justify-between items-center">
       <div className="flex items-center text-md font-extrabold text-muted-foreground font-mono">
         <Download className="h-3.5 w-3.5 mr-1.5" />
@@ -83,25 +83,23 @@ const OpenSource = () => {
       <div className="absolute inset-0 matrix-bg opacity-30 z-0"></div>
       <div className="absolute -bottom-40 -right-40 w-80 h-80 bg-secondary/20 blur-[100px] rounded-full z-0"></div>
       <div className="absolute -top-40 -left-40 w-80 h-80 bg-primary/20 blur-[100px] rounded-full z-0"></div>
-      
+
       <div className="section-container relative z-10">
         <div className="flex items-center gap-2 mb-6">
           <div className="bg-secondary/10 p-2 rounded-md">
             <GitFork className="h-5 w-5 text-secondary" />
           </div>
-          <h2 className="text-2xl md:text-3xl font-bold gradient-text">
-            Open Source Contributions
-          </h2>
+          <h2 className="text-2xl md:text-3xl font-bold gradient-text">Open Source Contributions</h2>
         </div>
-        
+
         <div className="font-mono text-sm text-foreground/70 mb-6">
           <span className="text-secondary">const</span> <span className="text-primary">openSource</span> = {"{"}
-          <span className="text-foreground/90"> models, libraries, contributions </span>
+          <span className="text-foreground/90"> models, libraries, datasets </span>
           {"}"};
         </div>
-        
-        <motion.div 
-          className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6"
+
+        <motion.div
+          className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 auto-rows-fr"
           variants={containerVariants}
           initial="hidden"
           whileInView="visible"

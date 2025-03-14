@@ -369,17 +369,6 @@ const Hero = () => {
         </motion.a>
 
         <motion.a
-          href="https://huggingface.co/mahdin70"
-          target="_blank"
-          rel="noopener noreferrer"
-          className="bg-background/50 rounded-full p-2 text-foreground hover:text-primary hover:bg-card transition-all duration-300 hover:-translate-y-1 hover:shadow-[0_0_15px_rgba(0,102,255,0.3)]"
-          variants={itemVariants}
-          title="Hugging Face"
-        >
-          <HuggingFace className="w-5 h-5" />
-        </motion.a>
-
-        <motion.a
           href="mailto:mahdin.mukit248@gmail.com"
           className="bg-background/50 rounded-full p-2 text-foreground hover:text-primary hover:bg-card transition-all duration-300 hover:-translate-y-1 hover:shadow-[0_0_15px_rgba(0,102,255,0.3)]"
           variants={itemVariants}
