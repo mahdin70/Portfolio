@@ -49,7 +49,9 @@ export const projects = [
 // Skills data
 // Programming Languages
 export const programmingSkills = [
-  { name: "JavaScript/TypeScript", percentage: 90 },
+  { name: "JavaScript", percentage: 90 },
+  { name: "TypeScript", percentage: 90 },
+
   { name: "Python", percentage: 85 },
   { name: "Java", percentage: 80 },
   { name: "C/C++", percentage: 75 },
@@ -58,6 +60,7 @@ export const programmingSkills = [
 // Frameworks
 export const frameworkSkills = [
   { name: "React", percentage: 90 },
+  { name: "Next.js", percentage: 85 },
   { name: "NodeJS/Express", percentage: 85 },
   { name: "Tailwind CSS", percentage: 95 },
   { name: "LangChain", percentage: 70 },
@@ -84,6 +87,8 @@ export const generativeAISkills = [
   { name: "Vector Databases", percentage: 70 }, // e.g., Pinecone, Weaviate
   { name: "Prompt Engineering", percentage: 80 }, // Crafting effective AI prompts
   { name: "Fine-Tuning Models", percentage: 65 }, // e.g., LLMs like BERT, GPT
+  { name: "Agentic Workflow", percentage: 65 },
+  { name: "MCP", percentage: 65 },
 ];
 
 // Testing Tools
@@ -138,6 +143,27 @@ export const education = [
 
 // Work Experience data
 export const workExperience = [
+  {
+    role: "Chief Technology Officer and Engineering Manager",
+    company: "mADestic Digital",
+    period: "March 2025 - Present",
+    tasks: [
+      "Collect and analyze client requirements for technical feasibility.",
+      "Translate business requirements into actionable technical tasks.",
+      "Design scalable and maintainable system architectures for client projects.",
+      "Define end-to-end functional and technical workflows for both in-house and client projects.",
+      "Collaborate with the development team to ensure clean and efficient implementation.",
+      "Work closely with the QA team for robust testing and bug-free delivery.",
+      "Guide UI/UX designers to align product design with client expectations and usability standards.",
+      "Lead technical decision-making aligned with business goals.",
+      "Ensure timely and successful delivery of products and features.",
+      "Conduct R&D for ongoing and upcoming product innovations.",
+      "Estimate cost, resources, and timelines for projects with clear deliverables.",
+      "Enhance the company’s presence and influence in the technical landscape.",
+      "Oversee technology adoption and continuous improvement processes.",
+      "Align technical strategy with long-term company vision and market trends.",
+    ],
+  },
   {
     role: "Research Assistant",
     company: "Independent University, Bangladesh",
@@ -256,37 +282,38 @@ export const openSourceProjects = [
   {
     title: "Unixcoder in Code Vulnerability Detection and CWE Classification",
     description: "Fine-tuned microsoft/unixcoder-base model for detecting vulnerabilities and identify CWE ID in C/C++ code.",
-    downloads: "25",
+    downloads: "60",
     link: "https://huggingface.co/mahdin70/UnixCoder-Primevul-BigVul",
   },
   {
     title: "Unixcoder in Code Vulnerability Detection",
     description: "Fine-tuned microsoft/unixcoder-base model for detecting vulnerabilities in C/C++ code.",
-    downloads: "41",
+    downloads: "82",
     link: "https://huggingface.co/mahdin70/unixcoder-code-vulnerability-detector",
   },
   {
     title: "GraphCodeBERT in Code Vulnerability Detection",
     description: "Fine-tuned microsoft/graphcodebert-base model for detecting vulnerabilities in C/C++ code.",
-    downloads: "22",
+    downloads: "35",
     link: "https://huggingface.co/mahdin70/graphcodebert-devign-code-vulnerability-detector",
   },
   {
     title: "PrimeVul-BigVul Merged and Cleaned Dataset",
     description: "Merged and cleaned PrimeVul and BigVul datasets for code vulnerability detection.",
-    downloads: "49",
+    downloads: "122",
     link: "https://huggingface.co/datasets/mahdin70/merged_bigvul_primevul",
   },
   {
     title: "Balanced PrimeVul-BigVul Merged Dataset",
     description: "Merged and cleaned PrimeVul and BigVul datasets for code vulnerability detection.",
-    downloads: "48",
+    downloads: "108",
     link: "https://huggingface.co/datasets/mahdin70/balanced_merged_bigvul_primevul",
   },
   {
     title: "Cleaned BigVul Dataset",
-    description: "Cleaned BigVul dataset for code vulnerability detection and Fix Generation. This Version includs columns like CVE ID, CVE Page, CWE ID, func, fixed_func, vulnerability",
-    downloads: "41",
+    description:
+      "Cleaned BigVul dataset for code vulnerability detection and Fix Generation. This Version includs columns like CVE ID, CVE Page, CWE ID, func, fixed_func, vulnerability",
+    downloads: "88",
     link: "https://huggingface.co/datasets/mahdin70/cleaned_bigvul",
   },
 ];

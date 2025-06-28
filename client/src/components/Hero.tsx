@@ -120,7 +120,7 @@ const Hero = () => {
         <motion.div className="lg:col-span-7" variants={itemVariants}>
           <div className="inline-flex items-center bg-primary/10 text-white rounded-full px-3 py-1 text-sm font-mono mb-6 border border-primary/20 glow-pulse">
             <Terminal className="w-4 h-4 mr-2" />
-            <span>Software Engineer & Generative AI Developer</span>
+            <span>Engineering Manager | Software Engineer | Generative AI Engineer</span>
           </div>
 
           <h1 className="text-4xl md:text-5xl font-bold leading-tight mb-4">
@@ -135,7 +135,9 @@ const Hero = () => {
           </h1>
 
           <motion.div className="overflow-hidden mb-6" variants={typingVariants}>
-            <div className="terminal-text text-lg md:text-lg text-foreground/80">Crafting sleek digital solutions with code and flair</div>
+            <div className="terminal-text text-lg md:text-lg text-foreground/80">
+              Transforming Businesses by sleek digital solutions with code and flair
+            </div>
           </motion.div>
 
           <motion.div
@@ -152,10 +154,13 @@ const Hero = () => {
               // about.me
             </div>
             <p className="font-mono  text-sm md:text-base text-foreground/90 leading-relaxed">
-              I sling code like a digital ninja — clean, sharp, and right on target. Obsessed with Generative AI, I’m the guy who thinks
-              machines should flex their creative muscles while I sip my coffee. Software Product Management? Oh, I just casually turn chaos
-              into slick, market-ready solutions. I learn at warp speed, keep my ducks in a row (mostly), and live for the thrill of joining
-              innovative crews that don’t mess around. Ready to build the next big thing — hit me up!
+              As a dedicated Software Engineer, Generative AI Engineer, Project Manager, and Engineering Manager, I specialize in crafting
+              high-quality, efficient, and precise code to deliver innovative software solutions. My expertise in Generative AI drives my
+              passion for enabling machines to push the boundaries of creativity and functionality. With a strong focus on Software Product
+              Management, I excel at transforming complex requirements into streamlined, market-ready products. I thrive in fast-paced,
+              innovative environments, rapidly adapting to new challenges while maintaining a structured approach to project execution.
+              Committed to fostering collaboration and driving technical excellence, I am eager to contribute to cutting-edge teams building
+              transformative solutions. Let’s create the future together.
             </p>
 
             {/* Animated shimmer effect */}
