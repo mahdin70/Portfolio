@@ -299,8 +299,12 @@ const Hero = () => {
               {/* Blue glow */}
               <div className="absolute -top-10 -left-10 w-40 h-40 bg-primary/40 blur-[60px] rounded-full"></div>
 
-              <div className="relative z-10 flex items-center justify-center w-full h-full">
-                <span className="text-[10rem] leading-none">👨🏻‍💻</span>
+              <div className="relative z-10 flex items-center justify-center w-full h-32 mb-8">
+                <img
+                  src="../../SelfImage.jpg" // Replace with your image path or URL
+                  alt="Profile"
+                  className="object-cover rounded-full" // Adjust size and styling as needed
+                />
               </div>
             </motion.div>
 
