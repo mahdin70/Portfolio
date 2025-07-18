@@ -22,8 +22,8 @@ A modern, responsive portfolio website built with React, TypeScript, and Vite. F
 
 1. Clone the repository:
 ```bash
-git clone https://github.com/mahdin70/Revamped-Portfolio.git
-cd Revamped-Portfolio
+git clone https://github.com/mahdin70/Portfolio.git
+cd Portfolio
 ```
 
 2. Install dependencies:
