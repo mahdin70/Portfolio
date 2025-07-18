@@ -22,6 +22,7 @@ import {
   User
 } from "lucide-react";
 import {HuggingFace} from '@lobehub/icons';
+import SelfImage from "@/assets/Self-Image.jpg";
 
 const Hero = () => {
   const containerVariants = {
@@ -120,7 +121,7 @@ const Hero = () => {
         <motion.div className="lg:col-span-7" variants={itemVariants}>
           <div className="inline-flex items-center bg-primary/10 text-white rounded-full px-3 py-1 text-sm font-mono mb-6 border border-primary/20 glow-pulse">
             <Terminal className="w-4 h-4 mr-2" />
-            <span>Engineering Manager | Software Engineer | Generative AI Engineer</span>
+            <span>Project Manager | Engineering Manager | Software Engineer | AI Engineer</span>
           </div>
 
           <h1 className="text-4xl md:text-5xl font-bold leading-tight mb-4">
@@ -300,8 +301,11 @@ const Hero = () => {
               <div className="absolute -top-10 -left-10 w-40 h-40 bg-primary/40 blur-[60px] rounded-full"></div>
 
               <div className="relative z-10 flex items-center justify-center w-full h-full">
-                {" "}
-                <span className="text-[10rem] leading-none">👨🏻‍💻</span>{" "}
+                <img 
+                  src={SelfImage} 
+                  alt="Mukit Mahdin" 
+                  className="w-full h-full object-cover rounded-full"
+                />
               </div>
             </motion.div>
 
